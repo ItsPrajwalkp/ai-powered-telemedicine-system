@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Book Appointment</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📅 Book Appointment</h2>
+
+<label>Patient Name:</label>
+
+<input
+type="text"
+id="patient_name"
+placeholder="Enter Patient Name"
+>
+
+<br><br>
+
+<label>Selected Doctor:</label>
+
+<input
+type="text"
+id="selectedDoctor"
+readonly
+>
+
+<br><br>
+
+<label>Select Date:</label>
+
+<input type="date" id="date">
+
+<br><br>
+
+<label>Select Time:</label>
+
+<select id="time">
+
+<option>
+Select Time
+</option>
+
+</select>
+
+<br><br>
+
+<button onclick="bookAppointment()">
+
+Confirm Booking
+
+</button>
+
+<br><br>
+
+<div id="appointment_result">
+
+</div>
+
+<br>
+
+<a href="dashboard.html">
+
+← Back to Dashboard
+
+</a>
+
+</div>
+
+<script>
+
+window.onload = function() {
+
+    checkLogin();
+
+    loadSelectedDoctor();
+
+};
+
+</script>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🏥 Patient Dashboard</h2>
+
+<br>
+
+<a href="predict.html">
+
+<button>
+
+🧠 Predict Disease
+
+</button>
+
+</a>
+
+<br><br>
+
+<a href="appointments.html">
+
+<button>
+
+📋 My Appointments
+
+</button>
+
+</a>
+
+<br><br>
+
+<a href="index.html">
+
+<button>
+
+🚪 Logout
+
+</button>
+
+</a>
+
+</div>
+<script>
+
+document.getElementById("uploadForm")
+.addEventListener("submit", async function(e) {
+
+    e.preventDefault();
+
+    const fileInput =
+        document.getElementById("reportFile");
+
+    const statusText =
+        document.getElementById("uploadStatus");
+
+    const formData = new FormData();
+
+    formData.append(
+        "file",
+        fileInput.files[0]
+    );
+
+    try {
+
+        const response =
+            await fetch(
+                "http://127.0.0.1:8000/upload_report",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+        const result =
+            await response.json();
+
+        statusText.innerText =
+            "✅ Report uploaded successfully!";
+
+    }
+    catch (error) {
+
+        statusText.innerText =
+            "❌ Upload failed!";
+
+    }
+
+});
+
+</script>
+</body>
+
+</html>
+<h3 id="welcome_user"></h3>
+
+<script src="script.js"></script>
+
+<script>
+
+window.onload = function() {
+
+    checkLogin();
+    loadUserName();
+
+};
+
+</script>
+<body onload="checkLogin()"></body>
+<div class="card p-3 mt-4">
+
+    <h5>Upload Medical Report</h5>
+
+    <input
+        type="file"
+        id="reportFile"
+        class="form-control"
+    >
+
+    <button
+        class="btn btn-primary mt-2"
+        onclick="uploadReport()"
+    >
+        Upload Report
+    </button>
+
+</div>
+<div class="card p-3 mt-4">
+
+<h5>Doctor Updates</h5>
+
+<ul id="reportList"></ul>
+
+</div>
+<!-- 📩 View Doctor Feedback -->
+
+<div class="card">
+
+<h3>📩 Doctor Feedback</h3>
+
+<input type="text"
+id="feedbackFile"
+placeholder="Enter filename">
+
+<br><br>
+
+<button onclick="checkFeedback()">
+Check Feedback
+</button>
+
+<p id="feedbackResult"></p>
+
+</div>
+
+
+<script>
+
+async function checkFeedback() {
+
+    const filename =
+        document.getElementById(
+        "feedbackFile"
+        ).value;
+
+    const response =
+        await fetch(
+        `http://127.0.0.1:8000/get_feedback/${filename}`
+        );
+
+    const data =
+        await response.json();
+
+    document.getElementById(
+        "feedbackResult"
+    ).innerText =
+        data.feedback;
+
+}
+
+</script>

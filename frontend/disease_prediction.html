@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Disease Prediction</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
+
+</head>
+
+<body onload="checkLogin()">
+
+<div class="container">
+
+<h2>🧪 Disease Prediction</h2>
+
+<button onclick="logoutUser()">
+
+Logout
+
+</button>
+
+<br><br>
+
+<textarea
+id="symptoms"
+placeholder="Enter symptoms">
+
+</textarea>
+
+<br><br>
+
+<button onclick="predictDisease()">
+
+Predict Disease
+
+</button>
+
+<br><br>
+
+<div id="prediction_result">
+
+</div>
+
+<div id="doctor_list">
+
+</div>
+
+<div id="map"
+style="height:400px">
+
+</div>
+
+</div>
+
+</body>
+
+</html>

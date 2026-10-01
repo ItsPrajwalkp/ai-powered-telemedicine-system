@@ -1,0 +1,221 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #4facfe, #00c6ff);
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    width: 95%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* ===== INPUT FIELDS ===== */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4facfe;
+    outline: none;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #00c9a7, #00b894);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* ===== BUTTON GROUP ===== */
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
+/* ===== DASHBOARD GRID ===== */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ===== CARD DESIGN ===== */
+.card {
+    background: rgba(255,255,255,0.85);
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+/* FIXED TEXT VISIBILITY */
+.card h3 {
+    color: #222;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* ===== DOCTOR CARD ===== */
+.doctor-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.doctor-card:hover {
+    transform: scale(1.02);
+}
+
+/* ===== DISTANCE BOX ===== */
+.distance-box {
+    background: #eef3ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* ===== BOOKING PANEL ===== */
+#booking_panel {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f7ff;
+    border-radius: 12px;
+}
+
+/* ===== REPORT LIST ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f1f5ff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ===== POPUP ===== */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* ===== LOADING ===== */
+#loading {
+    display: none;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* ===== MAP ===== */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

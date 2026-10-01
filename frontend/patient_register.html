@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<script src="script.js"></script>
+
+<style>
+body {
+  font-family: Arial;
+  background: #0D1B3E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  width: 350px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg,#028090,#00C9A7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Create Account</h2>
+
+  <input type="text" id="register_name" placeholder="Enter Name">
+  <input type="email" id="register_email" placeholder="Enter Email">
+  <input type="password" id="register_password" placeholder="Password">
+
+  <button class="btn" onclick="registerPatient()">Register</button>
+
+  <div id="register_result"></div>
+</div>
+
+</body>
+</html>

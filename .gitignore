@@ -1,0 +1,55 @@
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Environment / Secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+
+# Build / Generated Files
+dist/
+build/
+*.log
+
+# Local Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Large Machine Learning Models
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Runtime Uploads
+uploads/
+backend/uploads/
+
+# Generated Results
+results/
+backend/results/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Old project backup
+telemedicine-project_old_backup/
+
+# Old duplicate root copies
+/dataset/
+/model/

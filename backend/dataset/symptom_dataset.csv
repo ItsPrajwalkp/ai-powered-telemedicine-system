@@ -1,0 +1,240 @@
+symptoms_text,disease
+"I have fever, cough and headache for two days",Flu
+"Experiencing high fever with body pain and cough",Flu
+"Sore throat with mild fever and fatigue",Flu
+"Cough with chills and headache",Flu
+"Body pain with fever and tiredness",Flu
+
+"I have fever with chills and heavy sweating",Malaria
+"High fever followed by shivering and sweating",Malaria
+"Fever with chills and headache for several days",Malaria
+"Experiencing sweating and recurring fever",Malaria
+"Severe chills with high temperature",Malaria
+
+"I feel chest pain and shortness of breath",Heart Disease
+"Breathlessness with chest discomfort and fatigue",Heart Disease
+"Chest pain while walking and difficulty breathing",Heart Disease
+"Tightness in chest with sweating",Heart Disease
+"Pain in chest spreading to arms",Heart Disease
+
+"My skin has red rashes and itching",Allergy
+"Itching with skin irritation and redness",Allergy
+"Allergic reaction with rash and swelling",Allergy
+"Skin rash with burning sensation",Allergy
+"Red itchy patches on skin",Allergy
+
+"I have stomach pain and vomiting",Food Poisoning
+"Nausea with abdominal pain and diarrhea",Food Poisoning
+"Vomiting after eating food with stomach cramps",Food Poisoning
+"Loose motions with stomach discomfort",Food Poisoning
+"Severe stomach pain and nausea",Food Poisoning
+
+"I feel very thirsty and urinate frequently",Diabetes
+"Frequent urination with fatigue and weight loss",Diabetes
+"High thirst with blurred vision",Diabetes
+"Feeling tired with increased hunger and thirst",Diabetes
+"Weight loss with excessive urination",Diabetes
+
+"I have joint pain and swelling in knees",Arthritis
+"Stiff joints with pain and reduced movement",Arthritis
+"Swelling in joints with chronic pain",Arthritis
+"Pain in joints especially in morning",Arthritis
+"Difficulty moving joints with stiffness",Arthritis
+
+"I have sore throat and fever",Throat Infection
+"Pain while swallowing with fever",Throat Infection
+"Throat irritation with mild fever",Throat Infection
+"Swollen throat with difficulty speaking",Throat Infection
+"Dry throat with cough and fever",Throat Infection
+
+"My eyes are red and itchy",Eye Infection
+"Eye irritation with discharge and redness",Eye Infection
+"Burning sensation in eyes with watering",Eye Infection
+"Swollen eyes with pain and redness",Eye Infection
+"Blurred vision with eye discomfort",Eye Infection
+
+"I feel tired and losing weight suddenly",Thyroid Disorder
+"Fatigue with weight changes and mood swings",Thyroid Disorder
+"Hair loss with tiredness and weakness",Thyroid Disorder
+"Unexplained weight loss with sweating",Thyroid Disorder
+"Feeling weak with irregular heartbeat",Thyroid Disorder
+
+"I have cough and chest tightness",Asthma
+"Difficulty breathing with wheezing",Asthma
+"Shortness of breath during night",Asthma
+"Chest tightness with dry cough",Asthma
+"Wheezing sound while breathing",Asthma
+
+"I have severe headache with nausea",Migraine
+"Throbbing headache with sensitivity to light",Migraine
+"Dizziness with headache and vomiting",Migraine
+"Pain on one side of head with nausea",Migraine
+"Blurred vision followed by headache",Migraine
+
+"I have high fever with body pain",Dengue
+"Severe headache with joint pain and fever",Dengue
+"Fever with rash and muscle pain",Dengue
+"Pain behind eyes with high fever",Dengue
+"Sudden fever with weakness and chills",Dengue
+
+"My skin looks yellow and I feel tired",Jaundice
+"Yellowing of eyes with fatigue",Jaundice
+"Loss of appetite with yellow skin",Jaundice
+"Dark urine with weakness and jaundice",Jaundice
+"Fatigue with pale stool and yellow skin",Jaundice
+
+"I have runny nose and sneezing",Common Cold
+"Cold with cough and nasal congestion",Common Cold
+"Sneezing with mild fever",Common Cold
+"Blocked nose with throat irritation",Common Cold
+"Watery eyes with cold symptoms",Common Cold
+
+"I have ear pain with discharge",Ear Infection
+"Pain in ear with reduced hearing",Ear Infection
+"Ear swelling with fluid discharge",Ear Infection
+"Sharp ear pain with fever",Ear Infection
+"Itching in ear with discomfort",Ear Infection
+
+"I have blurred vision and headache",Glaucoma
+"Loss of vision with eye pressure",Glaucoma
+"Eye pain with halos around lights",Glaucoma
+"Severe eye pressure with blurred sight",Glaucoma
+"Nausea with eye discomfort",Glaucoma
+
+"I have swelling in legs with pain",Varicose Veins
+"Bulging veins with discomfort in legs",Varicose Veins
+"Leg cramps with visible veins",Varicose Veins
+"Heaviness in legs with swelling",Varicose Veins
+"Pain after standing long time",Varicose Veins
+
+"I have abdominal pain with diarrhea",Gastroenteritis
+"Loose stools with vomiting and cramps",Gastroenteritis
+"Stomach infection with dehydration",Gastroenteritis
+"Nausea with frequent diarrhea",Gastroenteritis
+"Cramping pain in stomach with fever",Gastroenteritis
+
+"I have back pain with stiffness",Spondylitis
+"Lower back pain with reduced flexibility",Spondylitis
+"Spine stiffness with pain while bending",Spondylitis
+"Chronic back pain with inflammation",Spondylitis
+"Difficulty moving due to back stiffness",Spondylitis
+
+"I have been feeling feverish with cough and body aches",Flu
+"Persistent cough with mild fever and tiredness",Flu
+"Fever with headache and sore throat for two days",Flu
+"Chills with cough and weakness",Flu
+"Fatigue with high temperature and cough",Flu
+
+"Recurring fever with chills and intense sweating",Malaria
+"Shivering followed by high fever and sweating",Malaria
+"Fever spikes with chills and headache",Malaria
+"Excessive sweating after fever episodes",Malaria
+"Cold chills with high temperature",Malaria
+
+"Severe chest discomfort with breathing difficulty",Heart Disease
+"Pain in chest during physical activity",Heart Disease
+"Shortness of breath with tight chest",Heart Disease
+"Chest pressure with fatigue and sweating",Heart Disease
+"Discomfort in chest spreading to shoulder",Heart Disease
+
+"Severe itching with red skin patches",Allergy
+"Skin irritation with redness and swelling",Allergy
+"Allergic rash with itching sensation",Allergy
+"Inflamed skin with burning feeling",Allergy
+"Red bumps with itching on skin",Allergy
+
+"Vomiting with stomach cramps and nausea",Food Poisoning
+"Loose stools with abdominal pain after food",Food Poisoning
+"Severe nausea with stomach discomfort",Food Poisoning
+"Food intake followed by vomiting and diarrhea",Food Poisoning
+"Stomach upset with pain and nausea",Food Poisoning
+
+"Excessive thirst with frequent urination",Diabetes
+"Feeling weak with constant hunger and thirst",Diabetes
+"Blurred vision with increased urination",Diabetes
+"Unusual weight loss with fatigue",Diabetes
+"Dry mouth with excessive thirst",Diabetes
+
+"Painful joints with swelling and stiffness",Arthritis
+"Joint inflammation with difficulty moving",Arthritis
+"Morning stiffness in joints with pain",Arthritis
+"Chronic joint pain with swelling",Arthritis
+"Reduced joint movement with discomfort",Arthritis
+
+"Pain in throat while swallowing food",Throat Infection
+"Swollen throat with irritation and fever",Throat Infection
+"Difficulty swallowing with throat pain",Throat Infection
+"Throat dryness with mild fever",Throat Infection
+"Inflamed throat with discomfort",Throat Infection
+
+"Eye redness with watery discharge",Eye Infection
+"Irritated eyes with itching and swelling",Eye Infection
+"Burning eyes with redness and pain",Eye Infection
+"Sticky discharge from eyes with discomfort",Eye Infection
+"Sensitivity to light with eye redness",Eye Infection
+
+"Sudden weight loss with fatigue and weakness",Thyroid Disorder
+"Feeling anxious with weight fluctuations",Thyroid Disorder
+"Hair thinning with weakness and fatigue",Thyroid Disorder
+"Irregular heartbeat with tiredness",Thyroid Disorder
+"Extreme fatigue with unexplained weight loss",Thyroid Disorder
+
+"Shortness of breath with wheezing sound",Asthma
+"Difficulty breathing during night",Asthma
+"Chest tightness with coughing",Asthma
+"Wheezing and breathlessness after activity",Asthma
+"Dry cough with breathing difficulty",Asthma
+
+"Severe headache with light sensitivity",Migraine
+"Throbbing pain in head with nausea",Migraine
+"Headache with blurred vision and dizziness",Migraine
+"Pain on one side of head with vomiting",Migraine
+"Sensitivity to noise with headache",Migraine
+
+"Sudden high fever with muscle pain",Dengue
+"Joint pain with severe fever and headache",Dengue
+"Pain behind eyes with fever and weakness",Dengue
+"Skin rash with high fever",Dengue
+"Severe body pain with fever",Dengue
+
+"Yellow eyes with fatigue and weakness",Jaundice
+"Loss of appetite with yellowish skin",Jaundice
+"Dark urine with pale stool",Jaundice
+"Fatigue with yellowing of eyes",Jaundice
+"Yellow skin with weakness and nausea",Jaundice
+
+"Sneezing with runny nose and congestion",Common Cold
+"Nasal blockage with mild cough",Common Cold
+"Cold symptoms with watery eyes",Common Cold
+"Mild fever with sneezing",Common Cold
+"Runny nose with throat irritation",Common Cold
+
+"Sharp ear pain with fluid discharge",Ear Infection
+"Reduced hearing with ear discomfort",Ear Infection
+"Swelling in ear with pain",Ear Infection
+"Pain inside ear with itching",Ear Infection
+"Blocked ear with mild fever",Ear Infection
+
+"Vision problems with eye pressure",Glaucoma
+"Blurred sight with eye discomfort",Glaucoma
+"Eye pain with headache and nausea",Glaucoma
+"Difficulty seeing with eye strain",Glaucoma
+"Halos around lights with eye pain",Glaucoma
+
+"Heavy legs with visible veins",Varicose Veins
+"Swelling in legs after standing",Varicose Veins
+"Painful veins in legs",Varicose Veins
+"Leg discomfort with bulging veins",Varicose Veins
+"Cramping pain in legs",Varicose Veins
+
+"Frequent diarrhea with stomach cramps",Gastroenteritis
+"Vomiting with abdominal discomfort",Gastroenteritis
+"Loose stools with dehydration",Gastroenteritis
+"Nausea with stomach infection",Gastroenteritis
+"Stomach pain with diarrhea and fever",Gastroenteritis
+
+"Lower back stiffness with pain",Spondylitis
+"Spine pain with reduced movement",Spondylitis
+"Back pain while bending",Spondylitis
+"Chronic stiffness in spine",Spondylitis
+"Inflammation in back with pain",Spondylitis

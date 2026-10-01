@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Hospital Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🏥 Hospital Dashboard</h2>
+
+<button onclick="logoutUser()">
+Logout
+</button>
+
+
+<!-- ========================= -->
+<!-- 📅 Appointment Requests -->
+<!-- ========================= -->
+
+<h3>📅 Appointment Requests</h3>
+
+<div id="appointments_list">
+Loading...
+</div>
+
+
+<!-- ========================= -->
+<!-- 🩺 Patient Reports -->
+<!-- ========================= -->
+
+<div class="card">
+
+<h3>🩺 Patient Reports</h3>
+
+<button onclick="loadReports()">
+Load Reports
+</button>
+
+<ul id="reportList"></ul>
+
+</div>
+
+</div>
+
+
+<script>
+
+loadAppointments();
+
+
+// ==========================
+// LOAD REPORTS
+// ==========================
+
+async function loadReports() {
+
+    try {
+
+        const response =
+            await fetch(
+            "http://127.0.0.1:8000/get_reports"
+            );
+
+        const data =
+            await response.json();
+
+        const list =
+            document.getElementById(
+            "reportList"
+            );
+
+        list.innerHTML = "";
+
+        data.reports.forEach(file => {
+
+            const li =
+                document.createElement("li");
+
+            li.innerHTML = `
+
+            <b>${file}</b>
+
+            <br><br>
+
+            <a href="http://127.0.0.1:8000/download_report/${file}"
+               target="_blank">
+
+            <button>
+            📄 View / Download Report
+            </button>
+
+            </a>
+
+            <br><br>
+
+            <textarea
+            id="feedback_${file}"
+            placeholder="Write feedback"
+            rows="3"
+            style="width:100%;">
+            </textarea>
+
+            <br><br>
+
+            <button
+            onclick="sendFeedback('${file}')">
+
+            Submit Feedback
+
+            </button>
+
+            <hr>
+
+            `;
+
+            list.appendChild(li);
+
+        });
+
+    }
+
+    catch(error) {
+
+        alert("Error loading reports");
+
+        console.error(error);
+
+    }
+
+}
+
+
+
+// ==========================
+// SEND FEEDBACK
+// ==========================
+
+async function sendFeedback(file) {
+
+    try {
+
+        const feedbackText =
+            document.getElementById(
+            "feedback_" + file
+            ).value;
+
+        await fetch(
+            "http://127.0.0.1:8000/add_feedback",
+            {
+                method: "POST",
+
+                headers: {
+                    "Content-Type":
+                    "application/json"
+                },
+
+                body: JSON.stringify({
+                    filename: file,
+                    doctor_feedback:
+                    feedbackText
+                })
+            }
+        );
+
+        alert("✅ Feedback Sent Successfully");
+
+    }
+
+    catch(error) {
+
+        alert("Error sending feedback");
+
+        console.error(error);
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
