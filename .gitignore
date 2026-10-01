@@ -30,7 +30,6 @@ build/
 *.sqlite3
 
 # Large Machine Learning Models
-*.safetensors
 *.bin
 *.pt
 *.pth
